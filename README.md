@@ -6,3 +6,12 @@ all_data_tfrecord  &  all_tfrecord_load  >>  write tfrecord  +load tfrecord (no 
 loss  &  metrics  >>  for training
 
 model  >>  unet + sknet (not latest version)
+
+
+Version
+#######
+Python : 3.7.7
+
+tf :2.1
+keras version
+(One day may upload Pytorch version.....)
