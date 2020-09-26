@@ -8,7 +8,7 @@ loss  &  metrics  >>  for training
 model  >>  unet + sknet (not latest version)
 
 
-Version
+
 
 #######
 
