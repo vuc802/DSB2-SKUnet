@@ -43,7 +43,7 @@ if __name__ == "__main__":
      metrics = [dice_coefficient, iou]
      model.compile(loss="binary_crossentropy", optimizer=opt, metrics=metrics)
      model.summary()
-     #"binary_crossentropy"
+     #can choose another loss function,jaccard loss function gets good grade now >>2020/9/27
 
      callbacks = [
           ModelCheckpoint(BASE_DIR + "calc//skunet_model.h5"),
