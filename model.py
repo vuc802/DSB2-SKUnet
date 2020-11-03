@@ -161,7 +161,7 @@ def build_model(batch):
     x = SKConv(M=2, r=16, L=32, G=32, name='skconv'+'mid')(x)
 
     #sknet (copy and crop)
-    for i in range(4):
+    for i in range(3):
        skip_x[i]=SKConv(M=2, r=16, L=32, G=32, name='skconv'+str(i))(skip_x[i])
 
     skip_x.reverse()
