@@ -1,13 +1,15 @@
 # DSB2-SKUnet
-merge_normal_data.py  >>  merge 3 dataset (SunnyBrook data and some manual data) and split into 3 folders
+大學時期的大專生計畫(已結案)
 
-(因為前處理的方法還未公開,所以先下架.....XD)
+### Overview
+In the 3D cardiac image segmentation task, we utilize three public datasets from Kaggle for model training and evaluate on the testing dataset from Kaggle. The model architecture is U-Net combined with two attention modules, CBAM and SK-Net. To fit the ground truth format in Kaggle (i.e., cardiac output, ml), we transfer the segmentation map (cm2) to the cardiac output (ml) based on the resize ratio in the preprocessing step and the patient's information from the DICOM file.
 
-all_data_tfrecord  &  all_tfrecord_load  >>  write tfrecord  +load tfrecord (no data augmentation version)
+### Note
+merge_normal_data.py  >>  merge 3 datasets (SunnyBrook data and some manual data) and split into 3 folders
 
-loss  &  metrics  >>  for training
+all_data_tfrecord  &  all_tfrecord_load  >>  write tfrecord  + load tfrecord 
 
-model  >>  unet + sknet (not latest version)
+model  >>  unet + sknet 
 
 
 
