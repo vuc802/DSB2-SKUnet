@@ -7,17 +7,7 @@ In the 3D cardiac image segmentation task, we utilize three public datasets from
 ### Note
 merge_normal_data.py  >>  merge 3 datasets (SunnyBrook data and some manual data) and split into 3 folders
 
-all_data_tfrecord  &  all_tfrecord_load  >>  write tfrecord  + load tfrecord 
-
-model  >>  unet + sknet 
-
-
-
-
-#######
-
+### Environment
 Python : 3.7.7
 
 tf :2.1
-keras version
-(One day may upload Pytorch version.....)
